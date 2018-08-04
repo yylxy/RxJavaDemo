@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    tools:context="lyxs916.com.rxjava2demo.MainActivity"
+    tools:ignore="HardcodedText">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="1.简约订约" />
+
+    <TextView
+        android:id="@+id/item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="2.基本订约" />
+
+    <TextView
+        android:id="@+id/item3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="3.线程切换" />
+
+    <TextView
+        android:id="@+id/item4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="4.map转换发射" />
+
+    <TextView
+        android:id="@+id/item5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="5.zip相同合并" />
+
+    <TextView
+        android:id="@+id/item6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="6. concat合并发射" />
+
+    <TextView
+        android:id="@+id/item7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="7. interval时间间隔" />
+
+    <TextView
+        android:id="@+id/item8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="8.时间延迟" />
+
+    <TextView
+        android:id="@+id/item9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="9. Flowable" />
+
+    <TextView
+        android:id="@+id/item10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="10. Flowable-2" />
+
+    <TextView
+        android:id="@+id/item11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="跳转转2测试窗口" />
+
+</GridLayout>
