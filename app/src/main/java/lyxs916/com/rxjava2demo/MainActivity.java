@@ -397,6 +397,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 10-26 16:51:46.470 6267-6267/lyxs916.com.rxjava2demo E/Rx_java: accept : This is result 2
      * 10-26 16:51:46.471 6267-6267/lyxs916.com.rxjava2demo E/Rx_java: accept : This is result 3
      */
+    @SuppressLint("CheckResult")
     private void test4() {
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override

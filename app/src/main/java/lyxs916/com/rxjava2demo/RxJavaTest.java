@@ -3,7 +3,6 @@ package lyxs916.com.rxjava2demo;
 import android.annotation.SuppressLint;
 import android.util.Log;
 
-import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 import java.util.concurrent.TimeUnit;
 
@@ -19,6 +18,7 @@ import lyxs916.com.rxjava2demo.demo.GetRequest_Interface;
 import lyxs916.com.rxjava2demo.demo.Translation;
 import lyxs916.com.rxjava2demo.utils.LogUtil;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 import static lyxs916.com.rxjava2demo.MainActivity.TAG;
@@ -185,7 +185,6 @@ public class RxJavaTest {
                     @Override
                     public void accept(Long integer) throws Exception {
                         Log.d(TAG, "第 " + integer + " 次轮询");
-                        
                         /*
                          * 步骤3：通过Retrofit发送网络请求
                          **/
