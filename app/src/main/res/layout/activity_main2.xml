@@ -15,6 +15,7 @@
         android:layout_margin="2dp"
         android:padding="10dp"
         android:text="0.关闭" />
+
     <Button
         android:id="@+id/item1"
         android:layout_width="wrap_content"
@@ -54,6 +55,14 @@
         android:layout_margin="2dp"
         android:padding="10dp"
         android:text="5.延时的测试" />
+
+    <Button
+        android:id="@+id/item6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="10dp"
+        android:text="6.flatMat" />
 
 
 </LinearLayout>

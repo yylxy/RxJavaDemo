@@ -19,7 +19,7 @@ import static lyxs916.com.rxjava2demo.MainActivity.TAG;
 
 public class MainActivity2 extends AppCompatActivity implements View.OnClickListener {
     RxJavaTest rxJava;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,14 +31,14 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         findViewById(R.id.item3).setOnClickListener(this);
         findViewById(R.id.item4).setOnClickListener(this);
         findViewById(R.id.item5).setOnClickListener(this);
-//        findViewById(R.id.item6).setOnClickListener(this);
+        findViewById(R.id.item6).setOnClickListener(this);
 //        findViewById(R.id.item7).setOnClickListener(this);
 //        findViewById(R.id.item8).setOnClickListener(this);
 //        findViewById(R.id.item9).setOnClickListener(this);
 //        findViewById(R.id.item10).setOnClickListener(this);
 //        findViewById(R.id.item11).setOnClickListener(this);
     }
-    
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -58,9 +58,10 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
                 rxJava.text4();//网络测试
                 break;
             case R.id.item5:
-                rxJava.text5();//
+                rxJava.text5();//延时测试
                 break;
             case R.id.item6:
+                rxJava.text6();//flatMap
                 break;
             case R.id.item7:
                 break;
@@ -70,12 +71,10 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.item10:
                 break;
-            
-            
+
+
         }
     }
-    
-  
-    
-    
+
+
 }
