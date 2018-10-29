@@ -6,6 +6,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
@@ -354,10 +355,37 @@ public class RxJavaTest {
     }
 
 
+    public void text7() {
+        Observable.just("Hello", "World")
+                .map(new Function<String, Integer>() {
+                    @Override
+                    public Integer apply(String s) throws Exception {
+                        Log.e("flatmap", s);
+                        return s.hashCode();
+                    }
+                })
+                .map(new Function<Integer, String>() {
+                    @Override
+                    public String apply(Integer integer) throws Exception {
+                        Log.e("flatmap", "AAAA");
+                        return "AAAA";
+                    }
+                })
+                .subscribe(new Consumer<String>() {
+                    @Override
+                    public void accept(String str) throws Exception {
+                        Log.e("flatmap", "***" + str);
+                    }
+                });
+    }
+
+
+    public void text8() {
+        List<String> list = new ArrayList<>();
 
 
 
-
+    }
 
 
 }
