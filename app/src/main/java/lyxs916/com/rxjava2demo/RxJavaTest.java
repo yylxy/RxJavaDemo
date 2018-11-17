@@ -380,11 +380,31 @@ public class RxJavaTest {
     }
 
 
-    public void text8() {
-        List<String> list = new ArrayList<>();
+    public Observable<String> text8() {
+
+        return Observable.create(new ObservableOnSubscribe<String>() {
+            @Override
+            public void subscribe(ObservableEmitter<String> emitter) throws Exception {
+                Log.i(TAG, "onSubscribe" + "线程：" + Thread.currentThread().getName());
+                emitter.onNext("789456");
+                Log.i(TAG, "onSubscribe222" + "线程：" + Thread.currentThread().getName());
+                emitter.onComplete();
+
+            }
+        })
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.io());
 
 
+    }
 
+    public void text9(){
+        Observable.create(new ObservableOnSubscribe<Integer>() {
+            @Override
+            public void subscribe(ObservableEmitter<Integer> emitter) throws Exception {
+
+            }
+        });
     }
 
 

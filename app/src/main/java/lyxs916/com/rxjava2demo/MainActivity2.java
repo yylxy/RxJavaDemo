@@ -33,7 +33,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         findViewById(R.id.item5).setOnClickListener(this);
         findViewById(R.id.item6).setOnClickListener(this);
         findViewById(R.id.item7).setOnClickListener(this);
-//        findViewById(R.id.item8).setOnClickListener(this);
+        findViewById(R.id.item8).setOnClickListener(this);
 //        findViewById(R.id.item9).setOnClickListener(this);
 //        findViewById(R.id.item10).setOnClickListener(this);
 //        findViewById(R.id.item11).setOnClickListener(this);
@@ -67,6 +67,13 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
                 rxJava.text7();//map
                 break;
             case R.id.item8:
+                rxJava.text8().subscribe(new Consumer<String>() {
+                    @Override
+                    public void accept(String s) throws Exception {
+                        Log.i(TAG, "accept" + "线程：" + Thread.currentThread().getName());
+                        Log.e(TAG, s);
+                    }
+                });
                 break;
             case R.id.item9:
                 break;
