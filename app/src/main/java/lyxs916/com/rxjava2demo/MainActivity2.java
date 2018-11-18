@@ -19,12 +19,13 @@ import static lyxs916.com.rxjava2demo.MainActivity.TAG;
 
 public class MainActivity2 extends AppCompatActivity implements View.OnClickListener {
     RxJavaTest rxJava;
-
+    PollTest pollTest;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         rxJava = new RxJavaTest();
+        pollTest=  new PollTest();
         findViewById(R.id.item0).setOnClickListener(this);
         findViewById(R.id.item1).setOnClickListener(this);
         findViewById(R.id.item2).setOnClickListener(this);
@@ -44,6 +45,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         switch (v.getId()) {
             case R.id.item0:
                 finish();
+
                 break;
             case R.id.item1:
                 rxJava.text1();//简化的订约
@@ -76,7 +78,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
                 });
                 break;
             case R.id.item9:
-                new PollTest().polling();
+                pollTest.polling();
                 break;
             case R.id.item10:
                 break;
@@ -85,5 +87,9 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         }
     }
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        pollTest.onDestroy();
+    }
 }

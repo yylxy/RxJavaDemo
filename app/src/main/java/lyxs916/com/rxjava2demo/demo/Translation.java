@@ -11,7 +11,7 @@ public class Translation {
 
     private int status;
 
-    private content content;
+    public content content;
     private static class content {
         private String from;
         private String to;
@@ -23,5 +23,9 @@ public class Translation {
     //定义 输出返回数据 的方法
     public void show() {
         Log.d("RxJava", content.out );
+    }
+
+    public String getOut(){
+        return content.out;
     }
 }
