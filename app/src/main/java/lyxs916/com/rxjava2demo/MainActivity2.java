@@ -44,6 +44,8 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.item0:
+                // 获取activity任务栈
+                ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
                 finish();
 
                 break;
