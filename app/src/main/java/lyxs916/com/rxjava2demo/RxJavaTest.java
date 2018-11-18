@@ -6,6 +6,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
@@ -403,6 +404,17 @@ public class RxJavaTest {
             @Override
             public void subscribe(ObservableEmitter<Integer> emitter) throws Exception {
 
+            }
+        }).map(new Function<Integer, String>() {
+            @Override
+            public String apply(Integer integer) throws Exception {
+
+                return String.format(Locale.getDefault(),"The %s time",integer);
+            }
+        }).subscribe(new Consumer<String>() {
+            @Override
+            public void accept(String s) throws Exception {
+                Log.e("AAA",s);
             }
         });
     }
