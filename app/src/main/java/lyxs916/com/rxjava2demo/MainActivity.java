@@ -91,8 +91,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             
             case R.id.item11:
                 startActivity(new Intent(this, MainActivity2.class));
-                startActivity(new Intent(this, MainActivity2.class));
-                startActivity(new Intent(this, MainActivity2.class));
                 break;
         }
     }

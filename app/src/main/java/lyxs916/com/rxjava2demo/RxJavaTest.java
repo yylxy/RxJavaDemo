@@ -213,6 +213,7 @@ public class RxJavaTest {
                                 .subscribe(new Observer<Translation>() {
                                     @Override
                                     public void onSubscribe(Disposable d) {
+
                                     }
 
                                     @Override

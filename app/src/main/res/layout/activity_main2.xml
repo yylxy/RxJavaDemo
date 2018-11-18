@@ -79,6 +79,13 @@
         android:layout_margin="2dp"
         android:padding="10dp"
         android:text="8.返回Observable" />
+ <Button
+        android:id="@+id/item9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="10dp"
+        android:text="9.轮询加多接口的调用" />
 
 
 </LinearLayout>

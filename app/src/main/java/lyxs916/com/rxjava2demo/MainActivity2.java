@@ -34,7 +34,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         findViewById(R.id.item6).setOnClickListener(this);
         findViewById(R.id.item7).setOnClickListener(this);
         findViewById(R.id.item8).setOnClickListener(this);
-//        findViewById(R.id.item9).setOnClickListener(this);
+        findViewById(R.id.item9).setOnClickListener(this);
 //        findViewById(R.id.item10).setOnClickListener(this);
 //        findViewById(R.id.item11).setOnClickListener(this);
     }
@@ -76,6 +76,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
                 });
                 break;
             case R.id.item9:
+                new PollTest().polling();
                 break;
             case R.id.item10:
                 break;
