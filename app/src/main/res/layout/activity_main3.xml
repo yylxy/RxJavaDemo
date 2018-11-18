@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="2dp"
         android:padding="10dp"
-        android:text="1.简约订约" />
+        android:text="1.轮询加调用多个接口" />
 
 
 

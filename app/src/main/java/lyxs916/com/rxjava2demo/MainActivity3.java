@@ -13,12 +13,12 @@ import io.reactivex.functions.Consumer;
 import static lyxs916.com.rxjava2demo.MainActivity.TAG;
 
 public class MainActivity3 extends AppCompatActivity implements View.OnClickListener {
-//    PollTest pollTest;
+    PollTest pollTest;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
-//        pollTest=  new PollTest();
+        pollTest=  new PollTest();
         findViewById(R.id.item0).setOnClickListener(this);
         findViewById(R.id.item1).setOnClickListener(this);
 //        findViewById(R.id.item2).setOnClickListener(this);
@@ -40,7 +40,7 @@ public class MainActivity3 extends AppCompatActivity implements View.OnClickList
                 finish();
                 break;
             case R.id.item1:
-                startActivity(new Intent(this, MainActivity2.class));
+                pollTest.polling2();
                 break;
             case R.id.item2:
                 break;
@@ -66,6 +66,6 @@ public class MainActivity3 extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onDestroy() {
         super.onDestroy();
-//        pollTest.onDestroy();
+        pollTest.onDestroy();
     }
 }
